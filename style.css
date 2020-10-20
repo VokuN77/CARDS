@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.item{
+    margin: 1px;
+}
+
+.a{
+    grid-area: a;
+    background-image: url("https://drivingexperience.pl/wp-content/uploads/2016/04/driving_experience-181.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    border: 1px solid black;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "a";
+}
