@@ -6,9 +6,23 @@ body{
 .item{
     margin: 1px;
 }
+.samochody{
+}
+
+
+.samochod1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+}
 
 .a{
     grid-area: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("https://drivingexperience.pl/wp-content/uploads/2016/04/driving_experience-181.jpg");
     background-position: center;
     background-size: cover;
