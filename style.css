@@ -1,38 +1,26 @@
-body{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
 }
 
-.item{
-    margin: 1px;
-}
-.samochody{
+html{
+    box-sizing: border-box;
 }
 
-
-.samochod1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: yellowgreen;
-}
-
-.a{
-    grid-area: a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
     background-image: url("https://drivingexperience.pl/wp-content/uploads/2016/04/driving_experience-181.jpg");
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container{
     display: grid;
-    height: 100vh;
-    border: 1px solid black;
-    grid-template-columns: 100%;
     grid-template-rows: 100%;
-    grid-template-areas: "a";
+    grid-template-columns: 100%;
 }
+
+
