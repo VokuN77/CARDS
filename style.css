@@ -11,6 +11,7 @@ html{
     font-size: 60%;
 }
 
+
 body{
     background-image: url("https://drivingexperience.pl/wp-content/uploads/2016/04/driving_experience-181.jpg");
     background-position: center;
@@ -26,6 +27,21 @@ body{
     [center-end] minmax(6rem, 1fr);
 
 }
+@media only screen and (max-width: 62.5em){
+    .container{
+        grid-template-rows: 6rem 80vh
+        min-content 40vw repeat(3,
+        min-content);
+        grid-template-columns:
+        [full-start] minmax(6rem, 1fr) [center-start] repeat(8 [col-start] minmax(min-content));
+    }
+}
+
+    @media only screen and (max-width: 75em){
+        html {
+            font-size: 50%;
+        }
+    }
 
 .samochody{
     grid-column: center-start / center-end;
